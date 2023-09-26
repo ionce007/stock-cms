@@ -80,7 +80,7 @@
         $(function () {
             $.ajax({
                 type: 'GET',
-                url: "//www.foryet.net/api/actions.aspx?action=get_file_path",
+                url: "http://www.foryet.net/api/actions.aspx?action=get_file_path",
                 dataType: 'json',
                 success: function (ret, stutas, xhr) {
                     if (ret.code == 100 && ret.data.length > 0) {
@@ -118,7 +118,7 @@
                 var index = layer.load(1, { shade: [0.1, '#fde5e5'] });//0.1透明度的白色背景
                 $.ajax({
                     type: 'GET',
-                    url: "//www.foryet.net/api/actions.aspx?action=recieve_wx_auth_login&code=" + code,
+                    url: "http://www.foryet.net/api/actions.aspx?action=recieve_wx_auth_login&code=" + code,
                     dataType: 'json',
                     success: function (ret, stutas, xhr) {
                         layer.close(index);
@@ -135,7 +135,7 @@
             var index = layer.load(1, { shade: [0.1, '#fde5e5'] });//0.1透明度的白色背景
             $.ajax({
                 type: 'GET',
-                url: "//www.foryet.net/api/actions.aspx?action=formula_fore_login",
+                url: "http://www.foryet.net/api/actions.aspx?action=formula_fore_login",
                 dataType: 'json',
                 success: function (ret, stutas, xhr) {
                     layer.close(index);
@@ -153,7 +153,7 @@
         var table = $(".table");
         function loadData(path) {
             table.bootstrapTable("destroy").bootstrapTable({
-                url: "//www.foryet.net/api/actions.aspx?action=fore_file_list&path=" + path,//"runingDataAnalysis/vib/dataList/getHistoryDataList.shtmldata_id=" + historyPointData,//请求路径--只需要带上项目中需求的条件就行了，不需要带页数什么的
+                url: "http://www.foryet.net/api/actions.aspx?action=fore_file_list&path=" + path,//"runingDataAnalysis/vib/dataList/getHistoryDataList.shtmldata_id=" + historyPointData,//请求路径--只需要带上项目中需求的条件就行了，不需要带页数什么的
                 queryParamsType: "",
                 method: 'GET',
                 dataType: 'json',
@@ -239,7 +239,7 @@
             var index = layer.load(1, { shade: [0.1, '#fde5e5'] });//0.1透明度的白色背景
             $.ajax({
                 type: 'POST',
-                url: "//www.foryet.net/api/actions.aspx?action=formula_before_login",
+                url: "http://www.foryet.net/api/actions.aspx?action=formula_before_login",
                 dataType: 'json',
                 success: function (ret, stutas, xhr) {
                     layer.close(index);
@@ -262,7 +262,7 @@
         function check_scan_QRCode(winIndex) {
             $.ajax({
                 type: 'GET',
-                url: "//www.foryet.net/api/actions.aspx?action=check_scan_qr_code",
+                url: "http://www.foryet.net/api/actions.aspx?action=check_scan_qr_code",
                 dataType: 'json',
                 success: function (ret, stutas, xhr) {
                     if (ret.code == 100 && ret.scaned == 1) {
@@ -297,7 +297,7 @@
             var area = isWeiXin() ? ['80%', '65%'] : ['40%', '75%'];
             $.ajax({
                 type: 'GET',
-                url: "//www.foryet.net/api/actions.aspx?action=query_wechat_log_state&fs_id=" + fs_id,
+                url: "http://www.foryet.net/api/actions.aspx?action=query_wechat_log_state&fs_id=" + fs_id,
                 dataType: 'json',
                 success: function (ret, stutas, xhr) {
                     if (ret.code == 100) {

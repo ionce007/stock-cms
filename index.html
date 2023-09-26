@@ -1,0 +1,335 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>通达信股票指标公式网</title>
+    <meta name="description" content="专业通达信指标公式下载,股票，期货交易指标下载" />
+    <meta name="keywords" content="通达信指标公式,涨停板,打板指标公式,选股公式,股票,量化交易,同花顺指标公式,程序化交易,公式网,股票公式,股票指标,怎么买股票,期货短线,学习炒股,股票入门基础知识,明日股市,股票财经,st股票,新手炒股,打新股,选股方法,炒股,理财投资,股票,A股,股市,股评,炒股,大盘,股票行情,买入,股市行情,股神,股民,短线,今日股市行情,股票最新,股票分析,选股,看盘,今日股市,股票今日,股票入门,股票入门基础知识,股票大盘,2023股市,股市大猩猩,中国股市,炒股养家,买股票,证券股票,银行股票,医疗股票,投资理财,股市今日行情,银行股,股票交易,短线king,财经股票,说股,元旦股市,2023年股市,期货日内短线,股票复盘,选股策略,希望的大地田巧妹炒股,天地在线股票,怎么选股,股票技术,股市财经,如何复盘,杠杆炒股" />
+    <script type="text/javascript">var menuId = "0_6";</script>
+    <!--<script type="text/javascript" src="/static/js/referrer.js?v=20220120"></script>-->
+
+    <link rel='stylesheet' type='text/css' href='/static/css/pintuer.css' />    
+    <link rel='stylesheet' type='text/css' href='/static/css/layerui.css' />
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <script src="/static/js/jquery-3.4.1.js"></script>
+    <!--  <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>-->
+    <!--<script type="text/javascript" src="/static/js/layer/layer.js"></script>-->
+    <script src="/static/js/bootstrap.min.js"></script>
+    <link href="/static/css/bootstrap-table.min.css" rel="stylesheet">
+    <!-- bootstrap-table.min.js -->
+    <script src="/static/js/bootstrap-table.min.js"></script>
+    <!-- 引入中文语言包 -->
+    <script src="/static/js/bootstrap-table-zh-CN.min.js"></script>
+
+    <style>
+        .bootstrap-table .table {border-top: 3px solid #ddd;border-bottom: 3px solid #ddd;}
+        .bootstrap-table .table tr:first-child {border-top: 3px solid #ddd;}
+        .bootstrap-table .table td, .bootstrap-table .table th {border-left: none;border-right: none;}
+        .fixed-table-container {border: none;}
+        .container {margin-top: 20px;}
+        .right{float:left;width:20%;text-align:right;margin-bottom:1rem;}
+        .left{float:left;width:70%;margin-bottom:1rem;font-weight:500;line-height:1.2rem;font-size:1.5rem;}
+        .title{line-height:1.2rem;min-height:1.2rem;}
+        .img-circle{border-radius:50%;width:32px;height:32px;margin-bottom:5px;margin-right:10px;}
+        .nav-tabs .active a{color:#ff0000;border:none;}
+        .nav-tabs a{font-size:18px;}
+
+        .modal-window {position: fixed;background-color: rgba(255, 255, 255, 0.25);top: 0;right: 0;bottom: 0;left: 0;z-index: 999;visibility: hidden;opacity: 0;pointer-events: none;transition: all 0.3s;}
+        .modal-window:target {visibility: visible;opacity: 1;pointer-events: auto;}
+        .modal-window > div {width: 300px;position: absolute;top: 50%;left: 50%;-webkit-transform: translate(-50%, -50%);transform: translate(-50%, -50%);padding: 2em;background: #f9f8ed;border:1px solid #ff0000;border-radius:10px;}
+        .modal-window header {font-weight: bold;}
+        .modal-window h1 {font-size: 150%;margin: 0 0 15px;}
+        .modal-close {color: #3f51b5;line-height: 30px;font-size: 80%;position: absolute;right: 0;text-align: center;top: 0;width: 70px;text-decoration: none;}
+        .modal-close:hover {color: black;}
+        a {color: inherit;}
+        .modal-window div:not(:last-of-type) {margin-bottom: 15px;}
+        .btn {background-color: #fff;padding: 0 0.3em;border-radius: 3px;text-decoration: none;}
+        .img-center {display: flex;justify-content: center;align-items: center;}
+        .btn i {padding-right: 0.3em;}
+    </style>
+</head>
+<body>
+    <!--<script type="text/javascript" src="/static/js/top.js?v=20220606"></script>-->
+    <div class="container">
+        <!--<h4>通达信指标公式</h4>-->
+<!--        <div class="title"><div class="left">通达信指标公式</div><div class="right" id="wxUserInfo"><a href="#" onclick="login()"> 登录</a></div></div>-->
+        <!--<div class="title"><div class="left">通达信指标公式</div><div class="right" id="wxUserInfo"><img class='img-circle' src="https://thirdwx.qlogo.cn/mmopen/vi_32/pe85EKTajkiaNias77cPx23yH0GlibBibGdIBxbSjRXWQ8MooHicFCTnqXsWyx7lfibpxeTf3ksbuChtu9HU9Pb2icEzA/132" /><span> 登录 </span></div></div>-->
+        <!--<div class="title"><div class="left">通达信指标公式</div><div class="right" id="wxUserInfo"></div></div>-->
+        <div class="title" style="display:inline-block"><div class="left" style="font-size:medium;">
+            <p>欢迎访问通达信指标公式网，你可以在小红书查看这些指标公式的说明（<a class='btn' href="https://www.xiaohongshu.com/user/profile/5b1bcb694eacab77ef53042a" target="_blank"><strong style="font-size:16px;color:#ff0000">点这里</strong></a>查看指标公式说明）。更多炒股技巧请上知乎个人主页<a href='https://www.zhihu.com/people/ionce91' target='_blank'>（https://www.zhihu.com/people/ionce91）。</a></p>
+            <p>如有任何问题，请扫描右侧微信二维码（<a class="btn" href="#" ><strong style="font-size:16px;color:#ff0000">微号：-ionce</strong></a>）联系作者本人。</p>
+<!--            <p>如有任何问题，你可加微信（<a class="btn" href="#open-modal" onmouseover="showWXQR()"><strong style="font-size:16px;color:#ff0000">微号：-ionce</strong></a>）联系本人。</p>--></div>
+        	<div class="right"><img src="/static/img/wxQRCode.jpg" style="width:120px;height:120px;"/></div>
+        </div>
+        <ul class="nav nav-tabs" role="tablist" id="fileKind"></ul>
+        <table class="table"></table>
+    </div>
+    <div id="open-modal" class="modal-window">
+        <div>
+            <a href="#" title="Close" class="modal-close" onclick="closePop()">Close</a>
+            <h5 class="img-center">扫码添加作者微信</h5>
+            <div class="img-center"><img src="/static/img/wxQRCode.jpg" style="width:160px;height:160px;"/></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="/static/js/layer/layer.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $.ajax({
+                type: 'GET',
+                url: "http://www.foryet.net/api/actions.aspx?action=get_file_path",
+                dataType: 'json',
+                success: function (ret, stutas, xhr) {
+                    if (ret.code == 100 && ret.data.length > 0) {
+                        //var html = "<li role='presentation' class='tab-name active'><a href='#tab0' data-toggle='tab' onclick='tabclick(this)'>全部</a></li>";
+                        var html = "";
+                        var activeTab = "";
+                        $.each(ret.data, function (index, item) { 
+                            html += "<li role='presentation' class='tab-name"+(index===0?" active":"")+"'><a href='#tab" + index + "' data-toggle='tab' onclick='tabclick(this)'>" + item.kind + "</a></li>"; 
+                            if(index === 0) activeTab = item.kind;
+                        });
+                        $("#fileKind").html(html);
+                        //loadData("");
+                        loadData(activeTab);
+                    }
+                },
+                error: function (xhr, textStatus, data) {
+                    //layer.close(index);
+                }
+            })
+        });
+        function showWXQR() {
+            location.href = "#open-modal";
+        }
+        function closePop() { location.href = "#"; }
+        function tabclick(e) {
+            // 获取已激活的标签页的名称
+            var activeTab = $(e).text();
+            $('li.tab-name').removeClass('active');
+            $(e.parentElement).addClass('active');
+            loadData(activeTab);
+        };
+        $(function () {
+            var code = getQueryParameter('code');
+            if ($.trim(code) != "") {
+                var index = layer.load(1, { shade: [0.1, '#fde5e5'] });//0.1透明度的白色背景
+                $.ajax({
+                    type: 'GET',
+                    url: "http://www.foryet.net/api/actions.aspx?action=recieve_wx_auth_login&code=" + code,
+                    dataType: 'json',
+                    success: function (ret, stutas, xhr) {
+                        layer.close(index);
+                        if (ret.code == 100) {
+                            location.href = ret.url;
+                        }
+                    },
+                    error: function (xhr, textStatus, data) {
+                        layer.close(index);
+                    }
+                })
+            }
+
+            var index = layer.load(1, { shade: [0.1, '#fde5e5'] });//0.1透明度的白色背景
+            $.ajax({
+                type: 'GET',
+                url: "http://www.foryet.net/api/actions.aspx?action=formula_fore_login",
+                dataType: 'json',
+                success: function (ret, stutas, xhr) {
+                    layer.close(index);
+                    if (ret.code == 100) {
+                        var html = "<a href='#' onclick='login()'> 登录</a>";
+                        if (ret.action == "Logined") html = "<img class='img-circle' src='" + ret.wxUser.headimgurl + "'/><span>" + ret.wxUser.nickname + "</span>";
+                        $("#wxUserInfo").html(html);
+                    }
+                },
+                error: function (xhr, textStatus, data) {
+                    layer.close(index);
+                }
+            })
+        })
+        var table = $(".table");
+        function loadData(path) {
+            table.bootstrapTable("destroy").bootstrapTable({
+                url: "http://www.foryet.net/api/actions.aspx?action=fore_file_list&path=" + path,//"runingDataAnalysis/vib/dataList/getHistoryDataList.shtmldata_id=" + historyPointData,//请求路径--只需要带上项目中需求的条件就行了，不需要带页数什么的
+                queryParamsType: "",
+                method: 'GET',
+                dataType: 'json',
+                onlyInfoPagination: false,
+//                contentType: 'application/json',//'application/x-www-form-urlencoded',
+                contentType: 'application/x-www-form-urlencoded',
+                cache: false,
+                striped: true, //是否显示行间隔色
+                pageNumber: 1, //初始化加载第一页
+                pagination: true,//是否分页
+                sidePagination: 'server',//server:服务器端分页|client：前端分页
+                pageSize: 10,//单页记录数
+                pageList: [10, 20, 30, 40, 50],//分页步进值
+                cardView: false, //是否显示详细视图
+                detailView: false, //是否显示父子表
+                queryParams: function (params) {
+                    var temp = {   //这里的键的名字和控制器的变量名必须一直，这边改动，控制器也需要改成一样的
+                        limit: params.pageSize,//上面定义的
+                        page: params.pageNumber,
+                    };
+                    return temp;
+                },
+                columns: [{
+                    field: 'server_filename',
+                    title: '文件标题',
+                    align: "left",
+                    valign: 'middle',
+                    formatter: function (value, row, index) {
+                        var len = row.server_filename.lastIndexOf(".");
+                        var filename = row.server_filename.substr(0, len);
+                        if (row.xhsUrl && row.xhsUrl.length > 0) {
+                            return "<a href='" + row.xhsUrl + "' target='_blank' title='点击查看指标公式说明'>" + filename + "</a>";
+                        }
+                        else return filename;
+                    }
+                }, {
+                    field: 'kind',
+                    title: '类型',
+                    align: "center",
+                    valign: 'middle',
+                    width: '8%',
+                }, {
+                    field: 'size',
+                    title: '文件大小',
+                    align: "left",
+                    valign: 'middle',
+                    width: '8%',
+                    formatter: function (value, row, index) {
+                        return formatBytes(row.size, 2);
+                    }
+                }, {
+                    field: 'price',
+                    title: '售价',
+                    align: "left",
+                    valign: 'middle',
+                    width: '10%',
+                    formatter: function (value, row, index) { return "￥" + row.price; }
+                }, {
+                    field: '#',
+                    title: '操作',
+                    align: "center",
+                    valign: 'middle',
+                    width: '10%',
+                    formatter: function (value, row, index) {
+                        var download_html = "<a href='#' onclick=\"rowClick('" + row.fs_id + "')\">下载</a>";
+                        return download_html;
+                    }
+                }],
+
+                responseHandler: function (res) {
+                    //console.log(res)
+                    table.bootstrapTable('getOptions').data = res.list;
+                    table.bootstrapTable('getOptions').total = res.total;
+                    return res;
+                },
+                onLoadError: function (err) {
+                    //showTips("数据加载失败！")
+                    layer.tips('点击此处返回列表', '.layui-layer-setwin .layui-layer-close', { tips: 3 });
+                }
+            });
+        }
+        function login() {
+            var index = layer.load(1, { shade: [0.1, '#fde5e5'] });//0.1透明度的白色背景
+            $.ajax({
+                type: 'POST',
+                url: "http://www.foryet.net/api/actions.aspx?action=formula_before_login",
+                dataType: 'json',
+                success: function (ret, stutas, xhr) {
+                    layer.close(index);
+                    if (ret.error == 100) {
+                        location.href = ret.redirectUrl;
+                    }
+                    else {
+                        alert(ret.msg);
+                        return false;
+                    }
+                },
+                error: function (xhr, textStatus, data) {
+                    layer.close(index);
+                },
+                complete: function (xhr, data) {
+                    layer.close(index);
+                }
+            })
+        }
+        function check_scan_QRCode(winIndex) {
+            $.ajax({
+                type: 'GET',
+                url: "http://www.foryet.net/api/actions.aspx?action=check_scan_qr_code",
+                dataType: 'json',
+                success: function (ret, stutas, xhr) {
+                    if (ret.code == 100 && ret.scaned == 1) {
+                        layer.close(winIndex);
+                        location.reload(true);
+                    }
+                },
+                error: function (xhr, textStatus, data) {
+                }
+            })
+        }
+        function getQueryParameter(paraName) {
+            var query = window.location.search.substring(1);
+            var vars = query.split("&");
+            for (var i = 0; i < vars.length; i++) {
+                var pair = vars[i].split("=");
+                if (pair[0].toLowerCase() == paraName.toLowerCase()) return pair[1];
+            }
+            return "";
+        }
+        function isWeiXin() {
+            var ua = window.navigator.userAgent.toLowerCase();
+            if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        function rowClick(fs_id) {
+	layer.alert("请扫描右上角微信二维码，联系作者本人！", { icon: 3 }); return false; 
+/*
+            var area = isWeiXin() ? ['80%', '65%'] : ['40%', '75%'];
+            $.ajax({
+                type: 'GET',
+                url: "http://www.foryet.net/api/actions.aspx?action=query_wechat_log_state&fs_id=" + fs_id,
+                dataType: 'json',
+                success: function (ret, stutas, xhr) {
+                    if (ret.code == 100) {
+                        if (ret.action == "Download") { location.href = ret.url; return false; }
+                        else if (ret.action == "Unlogin") { layer.alert("请先微信登录！", { icon: 3 }); return false; }
+                        else {
+                            var index = layer.open({
+                                type: 2,
+                                maxmin: true,
+                                area: area,//['40%', '75%'],//弹出区域大小
+                                content: ret.url,//跳转url
+                                success: function (layero, index) {//成功时候回调
+                                    setTimeout(function () { layer.tips('点击此处返回列表', '.layui-layer-setwin .layui-layer-close', { tips: 3 }); }, 500);
+                                },
+                                end: function () {//关闭或者结束弹框回调
+                                    //通常刷新列表
+                                }
+                            })
+                        }
+                    }
+                },
+                error: function (xhr, textStatus, data) {
+                    alert(data);
+                }
+            })*/
+        }
+
+        function formatBytes(a, b) {
+            if (0 == a) return "0 B";
+            var c = 1024, d = b || 2, e = ["B", "KB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB"], f = Math.floor(Math.log(a) / Math.log(c));
+            return parseFloat((a / Math.pow(c, f)).toFixed(d)) + " " + e[f];
+        }
+    </script>
+
+</body>
+</html>

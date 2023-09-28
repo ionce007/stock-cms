@@ -90707,9 +90707,15 @@ function get_file_path(){
     request(url + 'get_file_path', function (error, response, body) {   //body为返回的数据
         console.log('get_file_path');
         if (!error) {
+            console.log('success');
             console.log(body); // 请求成功的处理逻辑
             console.log(response);
         } 
+        else{
+            console.log('error');
+            console.log(error);
+            console.log(response);
+        }
     });
 }
 

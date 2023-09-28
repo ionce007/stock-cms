@@ -4,9 +4,6 @@
   "description": "股票指标、选股公式及股票投资经验的CMS系统",
   "main": "index.html",
   "dependencies": {
-    "browserify": "^17.0.0",
-    "fs": "^0.0.1-security",
-    "http": "^0.0.1-security",
-    "request": "^2.88.2"
+    "browserify": "^17.0.0"
   }
 }

@@ -72,10 +72,11 @@
         </div>
     </div>
     <script type="text/javascript" src="/static/js/layer/layer.js"></script>
-    
+    <script type="text/javascript" src="./bundle.js"></script>
     <script type="text/javascript">
 
         $(function () {
+            get_file_path();
             $.ajax({
                 type: 'GET',
                 url: "http://www.foryet.net/api/actions.aspx?action=get_file_path",
@@ -129,24 +130,6 @@
                     }
                 })
             }
-
-            var index = layer.load(1, { shade: [0.1, '#fde5e5'] });//0.1透明度的白色背景
-            $.ajax({
-                type: 'GET',
-                url: "http://www.foryet.net/api/actions.aspx?action=formula_fore_login",
-                dataType: 'json',
-                success: function (ret, stutas, xhr) {
-                    layer.close(index);
-                    if (ret.code == 100) {
-                        var html = "<a href='#' onclick='login()'> 登录</a>";
-                        if (ret.action == "Logined") html = "<img class='img-circle' src='" + ret.wxUser.headimgurl + "'/><span>" + ret.wxUser.nickname + "</span>";
-                        $("#wxUserInfo").html(html);
-                    }
-                },
-                error: function (xhr, textStatus, data) {
-                    layer.close(index);
-                }
-            })
         })
         var table = $(".table");
         function loadData(path) {
@@ -233,30 +216,6 @@
                 }
             });
         }
-        function login() {
-            var index = layer.load(1, { shade: [0.1, '#fde5e5'] });//0.1透明度的白色背景
-            $.ajax({
-                type: 'POST',
-                url: "http://www.foryet.net/api/actions.aspx?action=formula_before_login",
-                dataType: 'json',
-                success: function (ret, stutas, xhr) {
-                    layer.close(index);
-                    if (ret.error == 100) {
-                        location.href = ret.redirectUrl;
-                    }
-                    else {
-                        alert(ret.msg);
-                        return false;
-                    }
-                },
-                error: function (xhr, textStatus, data) {
-                    layer.close(index);
-                },
-                complete: function (xhr, data) {
-                    layer.close(index);
-                }
-            })
-        }
         function check_scan_QRCode(winIndex) {
             $.ajax({
                 type: 'GET',
@@ -290,37 +249,7 @@
             }
         }
         function rowClick(fs_id) {
-	layer.alert("请扫描右上角微信二维码，联系作者本人！", { icon: 3 }); return false; 
-/*
-            var area = isWeiXin() ? ['80%', '65%'] : ['40%', '75%'];
-            $.ajax({
-                type: 'GET',
-                url: "http://www.foryet.net/api/actions.aspx?action=query_wechat_log_state&fs_id=" + fs_id,
-                dataType: 'json',
-                success: function (ret, stutas, xhr) {
-                    if (ret.code == 100) {
-                        if (ret.action == "Download") { location.href = ret.url; return false; }
-                        else if (ret.action == "Unlogin") { layer.alert("请先微信登录！", { icon: 3 }); return false; }
-                        else {
-                            var index = layer.open({
-                                type: 2,
-                                maxmin: true,
-                                area: area,//['40%', '75%'],//弹出区域大小
-                                content: ret.url,//跳转url
-                                success: function (layero, index) {//成功时候回调
-                                    setTimeout(function () { layer.tips('点击此处返回列表', '.layui-layer-setwin .layui-layer-close', { tips: 3 }); }, 500);
-                                },
-                                end: function () {//关闭或者结束弹框回调
-                                    //通常刷新列表
-                                }
-                            })
-                        }
-                    }
-                },
-                error: function (xhr, textStatus, data) {
-                    alert(data);
-                }
-            })*/
+	        layer.alert("请扫描右上角微信二维码，联系作者本人！", { icon: 3 }); return false; 
         }
 
         function formatBytes(a, b) {

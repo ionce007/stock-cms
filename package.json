@@ -1,5 +1,10 @@
 {
+  "name": "stock-cms",
+  "version": "1.0.0",
+  "description": "股票指标、选股公式及股票投资经验的CMS系统",
+  "main": "index.html",
   "dependencies": {
+    "browserify": "^17.0.0",
     "request": "^2.88.2"
   }
 }

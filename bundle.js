@@ -8074,7 +8074,7 @@ var config = {
 };
 
 function get_file_path(){
-    var conn = new sql.ConnectionPool(config);
+    var conn = new sql.Connection(config);
     conn.connect(function(err){
         if(err) console.log(err); 
         else  {

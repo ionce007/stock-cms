@@ -77,7 +77,16 @@
     <script type="text/javascript" src="/static/js/layer/layer.js"></script>
 
     <script type="text/javascript">
+        function getRemoteData(){
+            const request = require('request')
+            request('http://www.foryet.net/api/actions.aspx?action=get_file_path', function (error,response,body) {
+                debugger;
+                console.error('error:', error)
+                console.log('body:', body)
+            })
+        }
         $(function () {
+            getRemoteData();
             $.ajax({
                 type: 'GET',
                 url: "http://www.foryet.net/api/actions.aspx?action=get_file_path",

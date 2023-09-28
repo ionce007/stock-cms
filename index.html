@@ -74,7 +74,8 @@
     <script type="text/javascript" src="/static/js/layer/layer.js"></script>
     <script src="bundle.js"></script>
     <script type="text/javascript">
-        get_file_path()
+        var filePath = require('get_file_path');
+        console.log(filePath)
         $(function () {
             $.ajax({
                 type: 'GET',

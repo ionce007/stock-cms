@@ -41069,6 +41069,7 @@ function extend() {
 var serverFun = require('./server.js');
 
 function get_file_path(){
+    debugger;
     console.log("logInfo:", serverFun.get_file_path());
 }
 
@@ -90704,8 +90705,10 @@ const url = "http://www.foryet.net/api/actions.aspx?action="
 var request = require('request');
 
 function get_file_path(){
+    debugger;
     request(url + 'get_file_path', function (error, response, body) {   //body为返回的数据
         console.log('get_file_path');
+        debugger;
         if (!error) {
             console.log('success');
             console.log(body); // 请求成功的处理逻辑

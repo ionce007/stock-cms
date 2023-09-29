@@ -17,7 +17,7 @@ var config = {
 
 function get_file_path(){
     debugger;
-    var conn = new sql.connect(config);
+    var conn = new sql.ConnectionPool(config);
     conn.connect(function(err){
         debugger;
         if(err) console.log(err); 

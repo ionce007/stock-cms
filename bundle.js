@@ -10159,7 +10159,7 @@ Promise.disableSynchronous = function() {
 },{"./core.js":53}],60:[function(require,module,exports){
 //const url = "http://www.foryet.net/api/actions.aspx?action="
 
-var sql = require('node-mssql'); 
+var sql = require('mssql'); 
 //var mysql = require('mysql');
 var config = {
     user: 'qds169535493',  

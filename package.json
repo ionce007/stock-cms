@@ -5,6 +5,10 @@
   "main": "index.html",
   "dependencies": {
     "mssql": "^3.3.0",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "tedious": "^16.4.1"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
   }
 }

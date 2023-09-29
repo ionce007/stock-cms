@@ -16,10 +16,13 @@ var config = {
 };
 
 function get_file_path(){
+    debugger;
     var conn = new sql.ConnectionPool(config);
     conn.connect(function(err){
+        debugger;
         if(err) console.log(err); 
         else  {
+            debugger;
             console.log('connect success!'); 
             var req = new sql.Request(conn);
             req.query('select * from select * from bdFile',function(err,res){ 

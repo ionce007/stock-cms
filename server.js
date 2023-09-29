@@ -1,6 +1,6 @@
 //const url = "http://www.foryet.net/api/actions.aspx?action="
 
-var sql = require('node-mssql'); 
+var sql = require('mssql'); 
 //var mysql = require('mysql');
 var config = {
     user: 'qds169535493',  

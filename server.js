@@ -1,6 +1,6 @@
 //const url = "http://www.foryet.net/api/actions.aspx?action="
 
-//var sql = require('mssql'); 
+var sql = require('mssql'); 
 //var mysql = require('mysql');
 var config = {
     user: 'qds169535493',  
@@ -17,8 +17,7 @@ var config = {
 
 function get_file_path(){
     debugger;
-    var sql = require('mssql'); 
-    var conn = new sql.ConnectionPool(config);
+    var conn = new sql.connect(config);
     conn.connect(function(err){
         debugger;
         if(err) console.log(err); 

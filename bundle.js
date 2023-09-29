@@ -46065,7 +46065,7 @@ conn.connect((err)=>{
     console.log('连接成功');
 })
 //result->查询结果
-let sql1='select * from article';
+/*let sql1='select * from article';
 conn.query(sql1,(err,result)=>{
     debugger;
     if(err){
@@ -46077,12 +46077,31 @@ conn.query(sql1,(err,result)=>{
         console.log("查询完成");
         console.log('------------------');  
     }
-})
+})*/
+
+function get_file_path(){
+    debugger;
+    let sql1='select * from article';
+    conn.query(sql1,(err,result)=>{
+        debugger;
+        if(err){
+            console.log(err.message);
+        }
+        else{
+            console.log('------------------');  
+            console.log(result);
+            console.log("查询完成");
+            console.log('------------------');  
+        }
+    })
+}
+
 //关闭数据库连接
 conn.end((err)=>{
     if (err) throw err;
     console.log("关闭成功");
 })
+
 
 /*
 var sql = require('mssql'); 
